@@ -1,45 +1,52 @@
 body {
   text-align: center;
-  background-color: #283149;
+  background-color: #DDDDDD;
 }
 
 h1 {
   font-size: 4rem;
-  color: #DBEDF3;
-  font-family: 'Rock Salt', cursive;
+  color: #903749;
+  font-family: 'Permanent Marker', cursive;
 }
 
 footer {
-  color: #DBEDF3;
+  color: #903749;
   font-family: sans-serif;
 }
 
 .z {
   background-image: url("images/tom1.png");
+  background-repeat: no-repeat;
 }
 
 .q {
   background-image: url("images/tom2.png");
+  background-repeat: no-repeat;
 }
 
 .s {
   background-image: url("images/tom3.png");
+  background-repeat: no-repeat;
 }
 
 .d {
   background-image: url("images/tom4.png");
+  background-repeat: no-repeat;
 }
 
 .j {
   background-image: url("images/snare.png");
+  background-repeat: no-repeat;
 }
 
 .k {
   background-image: url("images/crash.png");
+  background-repeat: no-repeat;
 }
 
 .l {
   background-image: url("images/kick.png");
+  background-repeat: no-repeat;
 }
 
 .set {
@@ -62,12 +69,12 @@ footer {
 
 .drum {
   outline: none;
-  border: 10px solid #404B69;
+  border: 10px solid #536162;
   font-size: 4rem;
-  font-family: 'Rock Salt', cursive;
+  font-family: 'Indie Flower', cursive;
   line-height: 2;
   font-weight: 900;
-  color: #DA0463;
+  color: #903749;
   text-shadow: 3px 0 #000000;
   border-radius: 15px;
   display: inline-block;
