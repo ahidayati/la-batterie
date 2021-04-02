@@ -1,11 +1,21 @@
-
+// to detect click
 var numberOfButtons = document.querySelectorAll(".drum");
 
 for (var i=0; i<numberOfButtons.length; i++) {
   numberOfButtons[i].addEventListener("click", function(){
     numberOfButtons = this.innerHTML
+    makeSound (numberOfButtons);
+ })
+}
 
-switch (numberOfButtons) {
+// to detect keyboard
+document.addEventListener("keydown", function() {
+  makeSound(event.key);
+})
+
+// to make sound wheck buttons are clicked or typed 
+function makeSound(key) {
+switch (key) {
   case "j":
   var snare = new Audio('sounds/snare.mp3');
   snare.play();
@@ -42,6 +52,5 @@ switch (numberOfButtons) {
     break;
 
   default: console.log(numberOfButtons);
-
-} })
+}
 }
