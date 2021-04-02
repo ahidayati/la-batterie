@@ -5,15 +5,17 @@ for (var i=0; i<numberOfButtons.length; i++) {
   numberOfButtons[i].addEventListener("click", function(){
     numberOfButtons = this.innerHTML
     makeSound (numberOfButtons);
+    buttonAnimation(numberOfButtons);
  })
 }
 
 // to detect keyboard
 document.addEventListener("keydown", function() {
   makeSound(event.key);
+  buttonAnimation(event.key);
 })
 
-// to make sound wheck buttons are clicked or typed 
+// to make sound wheck buttons are clicked or typed
 function makeSound(key) {
 switch (key) {
   case "j":
@@ -53,4 +55,14 @@ switch (key) {
 
   default: console.log(numberOfButtons);
 }
+}
+
+// add animation to the buttons
+function buttonAnimation (currentKey) {
+  var activeButton = document.querySelector("."+currentKey);
+  activeButton.classList.add("pressed");
+
+  setTimeout(function() {
+  activeButton.classList.remove("pressed");
+}, 200);
 }
